@@ -49,18 +49,16 @@ checkpoint03-flexbox/
 
 ## 🔗 Links Importantes
 
-- [Repositório no GitHub](link-do-repositorio)
+- [Repositório no GitHub](https://github.com/matheuswildeisen/CP3-FrontEnd)
 - [Site publicado no GitHub Pages](link-do-site)
 
 ---
 
 ## 📸 Capturas de Tela
 
-![Captura de Tela 1](link-para-captura1.png)
-*Exemplo de layout da página inicial*
+![Captura de Tela](c:\Users\wilde\Downloads\site-cp3-front.png)
 
-![Captura de Tela 2](link-para-captura2.png)
-*Exemplo de interação com os cards de produtos*
+
 
 ---
 
