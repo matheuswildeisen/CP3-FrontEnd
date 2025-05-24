@@ -37,7 +37,7 @@ A Vinharia Agnello é uma página web que destaca a nossa coleção de vinhos. O
 ## 🔗 Links Importantes
 
 - [Repositório no GitHub](https://github.com/matheuswildeisen/CP3-FrontEnd)
-- [Site publicado no GitHub Pages](link-do-site)
+- [Site publicado no GitHub Pages](https://matheuswildeisen.github.io/CP3-FrontEnd/index.html)
 
 ---
 
