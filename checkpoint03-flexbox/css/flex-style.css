@@ -1,0 +1,78 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Mudança de cor ao passar o mouse */
+}
+
+/* Seção de destaque */
+#destaque {
+    background-color: #e1bee7;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo dos produtos */
+#produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s; /* Transição para transformação */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
