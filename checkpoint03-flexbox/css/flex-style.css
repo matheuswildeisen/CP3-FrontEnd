@@ -72,8 +72,8 @@ footer {
     background-color: #6F2C3E; /* Cor do rodapé */
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding: 20px;
+    position: fixed; /* Fixa o rodapé na parte inferior */
     bottom: 0;
     width: 100%;
 }
