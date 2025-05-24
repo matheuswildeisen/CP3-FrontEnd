@@ -18,23 +18,10 @@ A Vinharia Agnello é uma página web que destaca a nossa coleção de vinhos. O
 
 ---
 
-## 📁 Estrutura do Projeto
-
-A estrutura do projeto é a seguinte:
-
-checkpoint03-flexbox/
-│
-└── css/
-│    └── flex-style.css
-├── index.html
-└── README.md
-
----
-
 ## 🛠️ Recursos Utilizados
 
-- **HTML5**: Estruturação do conteúdo.
-- **CSS3**: Estilização e layout.
+- **HTML**: Estruturação do conteúdo.
+- **CSS**: Estilização e layout.
   - **Flexbox**: Para organizar o layout da página.
   - **Pseudo-classes**: Para efeitos visuais interativos.
   - **Transformações CSS**: Para animações e interatividade.
@@ -51,14 +38,6 @@ checkpoint03-flexbox/
 
 - [Repositório no GitHub](https://github.com/matheuswildeisen/CP3-FrontEnd)
 - [Site publicado no GitHub Pages](link-do-site)
-
----
-
-## 📸 Capturas de Tela
-
-![Captura de Tela](c:\Users\wilde\Downloads\site-cp3-front.png)
-
-
 
 ---
 
