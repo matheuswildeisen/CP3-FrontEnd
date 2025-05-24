@@ -1,79 +1,134 @@
-/* Reset básico */
-body, h1, h2, h3, p, ul {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #EAEAEA; /* Nova cor de fundo  */
-    color: #333333; /* Cor do texto */
+    font-family: 'Merriweather', serif; 
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
-/* Estilo do cabeçalho */
+:root {
+    --color-bg: #2E1B12; 
+    --color-surface: #4E2A1E; 
+    --color-primary: #A52A2A; 
+    --color-primary-dark: #6D071A; 
+    --color-secondary: #D3B683; 
+    --color-text: #EFE9E6; 
+}
+
+
+/* Cabeçalho */
 header {
-    background-color: #6F2C3E; /* Cor do cabeçalho  */
-    color: white;
-    padding: 20px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-text);
+    padding: 25px;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-secondary);
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+/* Estilo dos produtos */ 
+#produtos { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px; 
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
+/* Menu */
 nav ul li a {
-    color: #A0522D; /* Cor dos links */
+    color: var(--color-secondary);
     text-decoration: none;
+    font-size: 18px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: white; /* Mudança de cor ao passar o mouse */
+    color: var(--color-text);
+    text-shadow: 0px 0px 8px var(--color-secondary);
 }
 
-/* Seção de destaque */
+/* Área de destaque */
 #destaque {
-    background-color: #ffffff; /* Cor de destaque  */
-    padding: 20px;
+    background-color: var(--color-surface);
+    padding: 40px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo dos produtos */
-#produtos {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
+/* Estilização dos cards de produtos */
 .card {
-    background-color: #999494; /* Cor do card */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 8px;
+    padding: 20px;
     width: 30%;
     text-align: center;
-    transition: transform 0.3s; /* Transição para transformação */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-secondary);
 }
 
-/* Estilo do rodapé */
+/* Rodapé */
 footer {
-    background-color: #6F2C3E; /* Cor do rodapé */
-    color: white;
+    background-color: var(--color-primary-dark);
+    color: var(--color-text);
     text-align: center;
     padding: 20px;
-    position: fixed; /* Fixa o rodapé na parte inferior */
-    bottom: 0;
-    width: 100%;
+    font-size: 16px;
+    font-style: italic;
+    border-top: 3px solid var(--color-secondary);
+}
+
+.lista-produtos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Animação dos produtos */
+.produto {
+    border: 2px solid var(--color-primary-dark);
+    background-color: var(--color-surface);
+    padding: 20px;
+    width: 180px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s ease-in-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-text);
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover */
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-secondary);
 }
